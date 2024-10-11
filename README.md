@@ -1,14 +1,14 @@
 # servidorsocks
 
-Varias pessoas me consultam quando precisam usar o gerenciador de pacotes ou fazer download quando estão conectadas em máquinas com restrição de navegação, segue.
+Várias pessoas me consultam quando precisam usar o gerenciador de pacotes ou fazer download quando estão conectadas em máquinas com restrição de navegação, segue.
 
-Você vai precisar de um servidor de proxy socks ou http, aqui vamos usar o socks.
+Você vai precisar de um servidor de proxy socks ou http, aqui vamos usar o socks. proque foi o mais simples de construir, deve haver alternativas, mas o Nodejs está na lista de softwares homologados e não precisa de permissões administrativas pra usar.
 
 ## servidor SOCKS 
 
 Do modo como ele está, ele escuta em todas os endereços disponives, na porta 5000. as variaveis PORT e ENDERECO no arquivo index.json definem isso.
 
-Ele é executado com Nodejs, mas acredito que com Bun também funcione, não testei.
+Como já mencionado, ele é executado com Nodejs, mas acredito que com Bun também funcione, não testei, Bun não está na tal lista.
 
 não precisa nenhum parâmetro, um "node index.js" já é o suficiente. Sugiro deixar isso num console à parte.
 
@@ -30,7 +30,9 @@ export all_proxy=socks5h://127.0.0.1:5000
 export http_proxy=socks5h://127.0.0.1:5000
 ```
 
-nesse caso o 5000 tem que casar com o primeiro numero lá do parâmetro -R.
+Nesse caso o 5000 tem que casar com o primeiro número definido do parâmetro -R.
 
-lembrando que essas variávei só valem para o usario e terminal logados, para fazer o apt / dnf / yum funcionar, se tornem root antes.
-curl também funciona, e wget creio que sim, esse não testei. Mas todas essas ferramentes tem opção de linha de comando ou arquivos de configuração caso elas ignorem o que foi exportado.
+Lembrando que essas variáveis só valem para o usuário e terminal logados, para fazer o apt / dnf / yum funcionar, se tornem root antes.
+curl também funciona, e wget creio que sim, esse não testei. Mas todas essas ferramentes tem opção de linha de comando ou arquivos de configuração para tal, caso elas ignorem o que foi exportado.
+
+Divirtam-se!
