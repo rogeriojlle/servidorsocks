@@ -12,6 +12,8 @@ Como já mencionado, ele é executado com Nodejs, mas acredito que com Bun tamb�
 
 não precisa nenhum parâmetro, um "node index.js" já é o suficiente. Sugiro deixar isso num console à parte.
 
+Ps: Da primeira vez que baixar o script, dê o comando "npm install", de dentro da pasta para ele instalar as dependências, igual o que acontece com o PIP no python.
+
 ## conexão SSH
 
 ```
