@@ -2,7 +2,7 @@
 
 Várias pessoas me consultam quando precisam usar o gerenciador de pacotes ou fazer download quando estão conectadas em máquinas com restrição de navegação, segue.
 
-Você vai precisar de um servidor de proxy socks ou http, aqui vamos usar o socks. proque foi o mais simples de construir, deve haver alternativas, mas o Nodejs está na lista de softwares homologados e não precisa de permissões administrativas pra usar.
+Você vai precisar de um servidor de proxy socks ou http, aqui vamos usar o socks. porque foi o mais simples de construir, deve haver alternativas, mas o Nodejs está na lista de softwares homologados e não precisa de permissões administrativas pra usar.
 
 ## servidor SOCKS 
 
